@@ -1,19 +1,11 @@
+"use client";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <main className={styles.main}>
-      <User name="Tanushree" />
-      <User name="Tanu" />
-      <h1>Home page</h1>
+      <h1>Events, Function and State</h1>
+      <button onClick={() => alert("Hello Next.js")}>Click me</button>
     </main>
   );
 }
-
-const User = (props) => {
-  return (
-    <div>
-      <h2>{props.name}</h2>
-    </div>
-  );
-};
